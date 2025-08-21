@@ -1,52 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Credimares | SERVIMARES</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
 </head>
 <body>
-
   <header>
-    <img src="logo-servimares.png" alt="Logo SERVIMARES" class="logo">
+    <div class="logo-container">
+      <img src="logo-servimares.png" alt="Logo SERVIMARES" class="logo" />
+      <div class="icons">
+        <img src="icon-finanzas.png" alt="Finanzas" />
+        <img src="icon-banco.png" alt="Banco" />
+      </div>
+    </div>
     <h1>Bienvenido a <strong>Credimares</strong></h1>
     <p class="slogan">¡Expertos en servir!</p>
   </header>
 
   <main>
-    <section>
+    <section class="asesores">
       <h2>Asesores disponibles</h2>
-      <div class="asesores">
-        <div class="asesor">
-          <img src="paola-beltran.jpg" alt="Paola Beltrán - Asesora Credimares">
-          <h3>Paola Beltrán</h3>
-          <p>Especialista en atención y servicio</p>
-          <a href="https://wa.me/573185216211?text=Hola%20Paola,%20quiero%20información" class="btn whatsapp">WhatsApp</a>
-          <a href="mailto:Paito422@hotmail.com" class="btn correo">Correo</a>
-        </div>
-
-        <div class="asesor">
-          <img src="marco.jpg" alt="Marco Estela - Coordinador SERVIMARES">
-          <h3>Marco Estela</h3>
-          <p>Coordinador de campañas institucionales</p>
-          <a href="https://wa.me/573054630601?text=Hola%20Marco,%20quiero%20información" class="btn whatsapp">WhatsApp</a>
-          <a href="mailto:credimares@gmail.com" class="btn correo">Correo</a>
-        </div>
+      <div class="asesor">
+        <img src="paola-beltran.jpg" alt="Paola Beltrán" />
+        <h3>Paola Beltrán</h3>
+        <p>Especialista en atención y servicio</p>
+        <a href="https://wa.me/573185216211?text=Hola%20Paola,%20quiero%20información" class="btn whatsapp">WhatsApp</a>
+        <a href="mailto:Paito422@hotmail.com" class="btn correo">Correo</a>
+      </div>
+      <div class="asesor">
+        <img src="marco.jpg" alt="Marco Estela" />
+        <h3>Marco Estela</h3>
+        <p>Coordinador de campañas institucionales</p>
+        <a href="https://wa.me/573054630601?text=Hola%20Marco,%20quiero%20información" class="btn whatsapp">WhatsApp</a>
+        <a href="mailto:credimares@gmail.com" class="btn correo">Correo</a>
       </div>
     </section>
 
     <section class="qr">
       <h2>Contacto institucional</h2>
-      <img src="qr-servimares.png" alt="QR institucional SERVIMARES" class="qr-img">
       <p>Escanea el código o usa los botones para contactarnos.</p>
+      <img src="qr-servimares.png" alt="QR institucional SERVIMARES" class="qr-img" />
       <a href="https://wa.me/573054630601?text=Hola%20Credimares" class="btn whatsapp">WhatsApp</a>
       <a href="mailto:credimares@gmail.com" class="btn correo">Correo</a>
       <p class="atencion">Atención 24/7 personalizada</p>
     </section>
 
     <section class="contacto">
+      <h2>Formulario de contacto</h2>
+      <form action="mailto:credimares@gmail.com" method="POST" enctype="text/plain">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit" class="btn enviar">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <section class="datos">
       <h2>Datos de contacto</h2>
       <ul>
         <li>📍 Dirección: Carrera 6 #13 - 407, Caloto, Colombia</li>
@@ -60,6 +78,5 @@
   <footer>
     <p>&copy; 2025 SERVIMARES | Todos los derechos reservados</p>
   </footer>
-
 </body>
 </html>
