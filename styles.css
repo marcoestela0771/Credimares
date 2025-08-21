@@ -1,160 +1,148 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f6f9;
-  color: #1a2a4f;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
-  background-color: #1a2a4f;
+  background: linear-gradient(135deg, #003366, #005599);
   color: white;
-  text-align: center;
   padding: 30px 20px;
-  border-bottom: 5px solid #0e1a33;
+  text-align: center;
 }
 
 .logo-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .logo {
-  max-width: 120px;
+  max-width: 150px;
 }
 
 .icons img {
   width: 60px;
-  margin-left: 10px;
-}
-
-h1 {
-  font-size: 40px;
-  margin: 10px 0;
+  margin: 0 10px;
 }
 
 .slogan {
-  font-style: italic;
-  font-size: 22px;
+  font-size: 1.2em;
+  margin-top: 10px;
 }
 
-section {
-  margin: 40px 0;
+main {
   padding: 20px;
-  background-color: white;
-  border: 2px solid #d0d6e2;
-  border-radius: 10px;
-}
-
-h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #0e1a33;
-  text-align: center;
 }
 
 .asesores {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
 .asesor {
-  width: 280px;
-  text-align: center;
-  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .asesor img {
-  width: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
-.asesor h3 {
-  font-size: 24px;
-  margin: 10px 0 5px;
+.contacto-asesor {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
 }
 
-.asesor p {
-  font-size: 18px;
-  margin-bottom: 15px;
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
+  padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
+  color: white;
   font-weight: bold;
-  font-size: 18px;
 }
 
 .whatsapp {
-  background-color: #25d366;
-  color: white;
+  background-color: #25D366;
 }
 
 .correo {
-  background-color: #1a2a4f;
-  color: white;
+  background-color: #0072c6;
 }
 
 .enviar {
-  background-color: #0e1a33;
-  color: white;
-  border: none;
-  cursor: pointer;
+  background-color: #005599;
+  margin-top: 10px;
 }
 
 .qr {
   text-align: center;
+  margin: 40px 0;
 }
 
 .qr-img {
-  width: 180px;
+  max-width: 200px;
   margin: 20px 0;
 }
 
 .atencion {
   font-style: italic;
-  font-size: 18px;
+  color: #555;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.contacto form {
+  max-width: 500px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-input, textarea {
-  padding: 10px;
-  font-size: 18px;
-  border: 1px solid #ccc;
+.contacto label {
+  display: block;
+  margin-top: 10px;
+}
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
   border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .datos ul {
   list-style: none;
   padding: 0;
-  font-size: 18px;
 }
 
 .datos li {
-  margin-bottom: 10px;
+  margin: 5px 0;
 }
 
 footer {
-  background-color: #1a2a4f;
+  background-color: #003366;
   color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 16px;
+  padding: 15px;
 }
-
