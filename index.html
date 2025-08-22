@@ -5,88 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Credimares | SERVIMARES</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.png" type="image/png" />
 </head>
 <body>
+
+  <!-- Encabezado -->
   <header>
-    <div class="logo-container">
-      <img src="logo-servimares.png" alt="Logo SERVIMARES" class="logo" />
-      <div class="icons">
-        <img src="icon-finanzas.png" alt="Finanzas" />
-        <img src="icon-productos.png" alt="Productos" />
-        <img src="icon-banco.png" alt="Banco" />
-      </div>
-    </div>
-    <h1>Bienvenido a <strong>Credimares</strong></h1>
+    <img src="logo-servimares.png" alt="Logo SERVIMARES" class="logo" />
+    <h1>Bienvenido a <span class="marca">Credimares</span></h1>
     <p class="slogan">¡EXPERTOS EN SERVIR!</p>
   </header>
 
-  <main>
-    <section class="asesores">
-      <h2>CONTACTANOS:</h2>
+  <!-- Bienvenida -->
+  <section class="bienvenida">
+    <h2>Soluciones financieras confiables</h2>
+    <p>Atención personalizada, respaldo institucional y acceso a servicios pensados para ti.</p>
+  </section>
 
-      <div class="asesor">
-        <img src="paola-beltran.jpg" alt="Paola Beltrán" />
+  <!-- Asesores -->
+  <section class="asesores">
+    <h2>Asesores disponibles</h2>
+    <div class="asesores-grid">
+
+      <div class="asesor-card">
+        <img src="paola.jpg" alt="Paola Beltrán" class="asesor-img" />
         <h3>Paola Beltrán</h3>
-        <p>Especialista en atención y servicio</p>
-        <p class="contacto-asesor">📞 318 521 6211<br>✉️ Paito422@hotmail.com</p>
-        <div class="botones">
-          <a href="https://wa.me/573185216211?text=Hola%20Paola,%20quiero%20información" class="btn whatsapp">WhatsApp</a>
-          <a href="mailto:Paito422@hotmail.com" class="btn correo">Correo</a>
+        <p><strong>Cargo:</strong> Líder de Servicios Financieros</p>
+        <p><strong>Celular:</strong> 318 5216211</p>
+        <p><strong>Email:</strong> Paito422@hotmail.com</p>
+        <div class="botones-contacto">
+          <a href="https://wa.me/573185216211" class="btn-whatsapp" target="_blank">WhatsApp</a>
+          <a href="mailto:Paito422@hotmail.com" class="btn-email">Email</a>
         </div>
       </div>
 
-      <div class="asesor">
-        <img src="marco.jpg" alt="Marco Estela" />
+      <div class="asesor-card">
+        <img src="marco.jpg" alt="Marco Estela" class="asesor-img" />
         <h3>Marco Estela</h3>
-        <p>Coordinador de campañas institucionales</p>
-        <p class="contacto-asesor">📞 305 463 0601<br>✉️ credimares@gmail.com</p>
-        <div class="botones">
-          <a href="https://wa.me/573054630601?text=Hola%20Marco,%20quiero%20información" class="btn whatsapp">WhatsApp</a>
-          <a href="mailto:credimares@gmail.com" class="btn correo">Correo</a>
+        <p><strong>Cargo:</strong> Líder de Convenios Corporativos</p>
+        <p><strong>Celular:</strong> 305 4630601</p>
+        <p><strong>Email:</strong> credimares@gmail.com</p>
+        <div class="botones-contacto">
+          <a href="https://wa.me/573054630601" class="btn-whatsapp" target="_blank">WhatsApp</a>
+          <a href="mailto:credimares@gmail.com" class="btn-email">Email</a>
         </div>
       </div>
-    </section>
 
-   // <section class="qr">
-      <h2>Contacto institucional</h2>
-      <p>Escanea el código o usa los botones para contactarnos.</p>
-      <img src="qr-servimares.png" alt="QR institucional SERVIMARES" class="qr-img" />
-      <a href="https://wa.me/573054630601?text=Hola%20Credimares" class="btn whatsapp">WhatsApp</a>
-      <a href="mailto:credimares@gmail.com" class="btn correo">Correo</a>
-      <p class="atencion">Atención 24/7 personalizada</p>
-    </section>
-//
-    <section class="contacto">
-      <h2>Formulario de contacto</h2>
-      <form action="mailto:credimares@gmail.com" method="POST" enctype="text/plain">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required />
+    </div>
+  </section>
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required />
+  <!-- Formulario de contacto -->
+  <section class="formulario-contacto">
+    <h2>Contacto directo con la empresa</h2>
+    <form action="mailto:credimares@gmail.com" method="POST" enctype="text/plain">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      <button type="submit" class="btn-enviar">Enviar por Email</button>
+      <a href="https://wa.me/573054630601" class="btn-whatsapp" target="_blank">Enviar por WhatsApp</a>
+    </form>
+  </section>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+  <!-- QR -->
+  <section class="qr-acceso">
+    <h2>Accede desde tu celular</h2>
+    <p>Escanea este código QR para abrir esta página en tu móvil:</p>
+    <img src="qr-credimares.png" alt="QR Credimares" class="qr-img" />
+  </section>
 
-        <button type="submit" class="btn enviar">Enviar mensaje</button>
-      </form>
-    </section>
+  <!-- Ubicaciones -->
+  <section class="empresa-info">
+    <h2>Ubicación institucional</h2>
+    <div class="info-centro">
+      <p><strong>Sede Cali:</strong> <a href="https://maps.app.goo.gl/zZKsZswCkpLC7PtB9" target="_blank">Calle 49 #12-59</a></p>
+      <p><strong>Sede Norte del Cauca:</strong> <a href="https://maps.app.goo.gl/zimzSnXtTwXzsAEX7" target="_blank">Carrera 6 No. 13 – 40 – Caloto</a></p>
+      <p><strong>Email:</strong> <a href="mailto:credimares@gmail.com">credimares@gmail.com</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/573054630601" target="_blank">305 4630601</a></p>
+    </div>
+  </section>
 
-    <section class="datos">
-      <h2>Datos de contacto</h2>
-      <ul>
-        <li>📍 Dirección: Carrera 6 #13 - 40</li>
-        <li>Caloto, Cauca -- Colombia</li>
-        <li>📞 Teléfono: +57 3054630601</li>
-        <li>✉️ Email: credimares@gmail.com</li>
-        <li>🌐 Web: <a href="https://servimares.github.io">servimares.github.io</a></li>
-      </ul>
-    </section>
-  </main>
-
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 SERVIMARES | Todos los derechos reservados</p>
+    <p>© 2025 SERVIMARES | Todos los derechos reservados</p>
   </footer>
+
 </body>
 </html>
+
